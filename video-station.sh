@@ -1,10 +1,14 @@
 #!/bin/bash
+CONFIG_DIR=/opt/panther-creek-station
+GIT_REPO=https://github.com/FromTheCabin/panther-creek-station.git
 
-WORK_DIR=panther-creek-station
+# Make sure ansible and git are present
+sudo apt -y install ansible git
 
 # Create installation directory
-mkdir -p /opt/$WORK_DIR
+mkdir -p $CONFIG_DIR
 
-# Change into work directory
-cd /opt/$WORK_DIR
+# Clone in the pather-creek station
+git clone $GIT_REPO $CONFIG_DIR
+
 
