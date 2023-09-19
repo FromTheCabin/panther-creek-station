@@ -1,2 +1,2 @@
 # video-station
-Video collcetion projcet
+Video collcetion project
